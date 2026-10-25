@@ -1,0 +1,1191 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    font-family: "Microsoft JhengHei", sans-serif;
+    margin: 0;
+}
+
+.hero h1{
+
+    font-size:72px;
+
+    color:#FFD700;
+
+    letter-spacing:8px;
+
+    text-shadow:
+        0 0 10px rgba(255,215,0,.5),
+        0 0 25px rgba(255,215,0,.3);
+        animation: goldGlow 2.8s ease-in-out infinite;
+
+}
+@keyframes goldGlow {
+    0%, 100% {
+        text-shadow:
+            0 0 10px rgba(255,215,0,.5),
+            0 0 25px rgba(255,215,0,.3);
+    }
+
+    50% {
+        text-shadow:
+            0 0 18px rgba(255,215,0,.9),
+            0 0 40px rgba(255,215,0,.6),
+            0 0 60px rgba(255,215,0,.3);
+    }
+}
+p {
+    font-size: 24px;
+    color: #dddddd;
+}nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+}
+
+nav h2{
+    font-size:36px;
+    color:#FFD700;
+    font-weight:bold;
+
+    text-shadow:
+        0 0 8px rgba(255,215,0,.6),
+        0 0 18px rgba(255,215,0,.4);
+
+    letter-spacing:4px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 60px;
+
+    background:#111;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+
+    box-sizing:border-box;
+
+    z-index:1000;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:30px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#FFD700;
+
+    text-shadow:
+        0 0 8px rgba(255,215,0,.8);
+
+    transform:translateY(-2px);
+}
+
+.hero{
+      height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding-top:100px;
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(70,80,160,.25) 0%,
+            rgba(20,20,40,.15) 40%,
+            transparent 80%
+        ),
+        #111111;
+
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+
+    background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(#FFD700 1px, transparent 1px);
+
+    background-size:
+        80px 80px,
+        120px 120px;
+
+    background-position:
+        0 0,
+        40px 40px;
+
+    animation: stars 10s linear infinite,
+    starTwinkle 3.5s ease-in-out infinite;
+    opacity:.65;
+}
+@keyframes starTwinkle {
+    0%, 100% {
+        opacity: .4;
+    }
+
+    50% {
+        opacity: .8;
+    }
+}
+.services{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.service-box{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:40px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:250px;
+    background:#222;
+    padding:30px;
+    border-radius:12px;
+    transition:.3s;
+    border:1px solid rgba(255,215,0,.12);
+    box-shadow:0 8px 24px rgba(0,0,0,.25);
+}
+
+.card:hover{
+     transform:translateY(-10px);
+    background:#2b2b2b;
+
+    border-color:rgba(255,215,0,.65);
+
+    box-shadow:
+        0 14px 32px rgba(0,0,0,.35),
+        0 0 18px rgba(255,215,0,.18);
+}
+
+
+.card h3{
+    color:gold;
+    transition: .3s;
+}
+    .card:hover h3{
+    text-shadow:
+        0 0 8px rgba(255,215,0,.6),
+        0 0 18px rgba(255,215,0,.35);
+}
+.about{
+    scroll-margin-top: 100px;
+    padding:80px 10%;
+    background:#111;
+    color:white;
+    text-align:center;
+}
+
+.about h2{
+    color:#ffd700;
+    margin-bottom:25px;
+    font-size:38px;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    font-size:22px;
+    line-height:1.8;
+    color:#ddd;
+}
+.testimonial{
+    scroll-margin-top: 100px;
+    padding:60px 10%;
+    text-align:center;
+    background:#181818;
+}
+
+.testimonial h2{
+    color:#ffd700;
+    margin-bottom:40px;
+}
+
+.review-box{
+    background:#2c2c2c;
+    color:white;
+    padding:30px;
+    margin:25px auto;
+    border-radius:15px;
+    max-width:700px;
+}
+
+.review-box h4{
+    margin:0;
+    color:#ffd700;
+}.subtitle{
+    font-size:26px;
+    margin-bottom:15px;
+}
+
+.slogan{
+    font-size:20px;
+    color:#bbbbbb;
+    margin-bottom:40px;
+}
+
+.btn{
+
+    display:inline-block;
+
+    background:gold;
+
+    color:black;
+
+    padding:19px 40px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+    line-height: 1;
+
+    transition:.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;  
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -70%;
+    width: 35%;
+    height: 200%;
+
+    background: rgba(255, 255, 255, 0.6);
+    transform: rotate(25deg);
+    transition: left 0.6s ease;
+
+    z-index: -1;
+}
+.btn:hover::before {
+    left: 140%;
+}
+.btn:hover{
+
+    background:#ffd700;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 0 20px rgba(255,215,0,.5);
+
+}
+.quote{
+    margin-top:40px;
+    font-size:18px;
+    color:#999;
+    font-style:italic;
+    letter-spacing:2px;
+}
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    /* 這一行很重要 */
+    pointer-events:none;
+
+
+    background-image:
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(#FFD700 1.5px, transparent 1.5px),
+        radial-gradient(white 2px, transparent 2px);
+
+    background-size:
+        120px 120px,
+        180px 180px,
+        250px 250px;
+
+    background-position:
+        20px 30px,
+        100px 80px,
+        60px 160px;
+
+    opacity:.5;
+}/* 最新文章 */
+
+.articles{
+    padding:100px 10%;
+    background:#0b0b0b;
+    text-align:center;
+}
+
+.articles h2{
+    color:#FFD700;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.article-container{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.article-card{
+
+    width: calc((100% - 60px) / 3);
+box-sizing: border-box;
+
+    background:#181818;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    transition:.4s;
+
+    border:1px solid rgba(255,215,0,.15);
+    overflow:hidden;
+position:relative;
+
+}
+.article-tag {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ffd700;
+    border-radius: 20px;
+    color: #ffd700;
+    font-size: 14px;
+}
+.article-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 0 25px rgba(255,215,0,.3);
+
+}
+
+.article-card h3{
+
+    color:#FFD700;
+
+}
+
+.article-card p{
+
+    color:#ccc;
+
+    line-height:1.8;
+
+}
+
+.article-card a{
+
+    color:#FFD700;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+@keyframes stars{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-80px);
+    }
+
+}/* 預約服務區 */
+
+.booking{
+    scroll-margin-top: 100px;
+    padding:100px 20px;
+    background:#111;
+    color:white;
+    text-align:center;
+}
+
+.booking h2{
+    color:#FFD700;
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.booking-intro{
+    color:#bbb;
+    margin-bottom:40px;
+    font-size:18px;
+}
+
+.booking-form{
+    width:min(700px, 90%);
+    margin:0 auto;
+    padding:40px;
+    background:#1b1b1b;
+    border:1px solid rgba(255,215,0,.25);
+    border-radius:18px;
+    box-sizing:border-box;
+    text-align:left;
+}
+
+.form-group{
+    margin-bottom:24px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:10px;
+    color:#FFD700;
+    font-weight:bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:14px 16px;
+    border:1px solid #444;
+    border-radius:10px;
+    background:#101010;
+    color:white;
+    font-size:16px;
+    box-sizing:border-box;
+    outline:none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#FFD700;
+    box-shadow:0 0 12px rgba(255,215,0,.25);
+}
+
+.booking-btn{
+    display:block;
+    margin:10px auto 0;
+    padding:14px 38px;
+    border:none;
+    border-radius:50px;
+    background:#FFD700;
+    color:#111;
+    font-weight:bold;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.booking-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px rgba(255,215,0,.5);
+}/* ===== 預約表單 ===== */
+
+.booking{
+    background:#111;
+    color:white;
+    padding:80px 20px;
+    text-align:center;
+}
+
+.booking h2{
+    color:#FFD700;
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.booking-intro{
+    color:#cccccc;
+    margin-bottom:40px;
+    font-size:20px;
+}
+
+.booking-form{
+    max-width:700px;
+    margin:0 auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.form-group{
+    text-align:left;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#FFD700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#222;
+    color:white;
+    font-size:16px;
+    box-sizing:border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    outline:none;
+    border:2px solid #FFD700;
+}
+
+.booking-btn{
+    background:#FFD700;
+    color:#111;
+    padding:15px;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.booking-btn:hover{
+    background:white;
+    transform:scale(1.05);
+}/* ===== 網站頁尾 ===== */
+
+.footer{
+    background:#080808;
+    color:#ccc;
+    text-align:center;
+    padding:60px 20px 30px;
+    border-top:1px solid rgba(255,215,0,.25);
+}
+
+.footer h2{
+    color:#FFD700;
+    font-size:32px;
+    letter-spacing:5px;
+    margin-bottom:15px;
+    text-shadow:0 0 12px rgba(255,215,0,.35);
+}
+
+.footer p{
+    font-size:16px;
+}
+
+.footer-links{
+    margin:25px 0;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:#FFD700;
+    text-shadow:0 0 8px rgba(255,215,0,.6);
+}
+
+.copyright{
+    margin-top:30px;
+    font-size:14px;
+    color:#777;
+}/* ===== 手機版 ===== */
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    nav div{
+        margin-top:15px;
+    }
+
+    nav a{
+        display:inline-block;
+        margin:8px;
+    }
+article-content {
+    padding: 30px 18px;
+ .article-content h1 {
+    font-size: 28px;
+    line-height: 1.4;
+}   
+}
+.article-content p {
+    font-size: 17px;
+    line-height: 1.9;
+}
+.article-content h2 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-top: 38px;
+    margin-bottom: 16px;
+}
+.back-home {
+    display: inline-block;
+    padding: 10px 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+    .hero h1{
+        font-size:52px;
+    }
+
+    .service-box{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        width:90%;
+    }
+.article-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.article-card {
+    width: 90%;
+}  
+
+.article-card p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+    .footer-links a{
+        display:block;
+        margin:10px 0;
+    }
+
+}@media (max-width:768px){
+
+    nav{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    nav h2{
+    font-size:28px;
+    margin-bottom:15px;
+}
+    .hero h1{
+        font-size:52px;
+    }
+
+    .subtitle{
+        font-size:22px;
+    }
+
+}/* ===== 漢堡選單 ===== */
+
+.menu-btn{
+    display:none;
+    background:none;
+    border:none;
+    color:#FFD700;
+    font-size:32px;
+    cursor:pointer;
+}
+
+@media (max-width:768px){
+
+    nav{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 20px;
+    }
+
+    nav h2{
+        font-size:28px;
+        margin:0;
+        white-space:nowrap;
+    }
+
+   .menu-btn{
+    display:block;
+    position:relative;
+    z-index:2001;
+}menu-btn{
+    display:block;
+    position:relative;
+    z-index:2001;
+    font-size: 30px;
+    color: #FFD700
+}
+.nav-links a{
+    margin:0;
+    color:white;
+    font-size:22px;
+    text-decoration:none;
+}
+
+.nav-links a:hover{
+    color:#FFD700;
+}
+
+.nav-links a{
+    display:block;
+    margin:0;
+    color:white;
+    font-size:18px;
+    text-decoration:none;
+}
+
+.nav-links a:hover{
+    color:#FFD700;
+}
+
+.nav-links{
+    position:fixed;
+    top:0;
+    right:0;
+
+    width:100%;
+    height:100vh;
+
+    background:rgba(10,10,20,.88);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:32px;
+
+    transform:translateX(100%);
+    transition:transform .35s ease;
+
+    z-index:2000;
+}
+
+.nav-links.show {
+    transform: translateX(0);
+}
+
+.nav-links a {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease,
+                transform 0.4s ease;
+}
+
+.nav-links.show a {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.nav-links.show a:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.nav-links.show a:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.nav-links.show a:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.nav-links.show a:nth-child(4) {
+    transition-delay: 0.4s;
+}
+.nav-links.show a:nth-child(5) {
+    transition-delay: 0.5s;
+}
+.menu-overlay {
+position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100vh;
+
+    background:rgba(0,0,0,.55);
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:opacity .35s ease;
+    z-index:999;
+}
+
+.menu-overlay.show{
+    opacity:1;
+    visibility:visible;
+}
+}
+.reveal {
+    opacity: 0;
+    transform: translateY(100px);
+    transition:
+        opacity 1.5s ease,
+        transform 1.5s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+  .services h2 {
+    font-size: 48px !important;
+    color: #ffd700;
+    margin-bottom: 40px;
+    text-shadow:
+        0 0 8px rgba(255, 215, 0, 0.6),
+        0 0 18px rgba(255, 215, 0, 0.35);
+}
+ .service-box .card {
+    opacity: 0;
+    transform: translateY(50px);
+}
+.service-box .card p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.services.show .card {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+service-box .card:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.service-box .card:nth-child(2) {
+    transition-delay: 0.5s;
+}
+
+.service-box .card:nth-child(3) {
+    transition-delay: 0.8s;
+}
+.about h2 {
+    opacity: 0;
+    transform: translateX(-180px);
+    transition: opacity 1.4s ease, transform 1.4s ease;
+}
+
+.about.show h2 {
+    opacity: 1;
+    transform: translateX(0);
+}
+/* 關於玄星閣－介紹文字動畫 */
+.about p {
+    opacity: 0;
+    transform: translateX(80px);
+    max-width: 700px;
+margin-left: auto;
+margin-right: auto;
+line-height: 1.8;
+}
+
+.about.show p {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 1s ease 0.5s,
+                transform 1s ease 0.5s;
+}
+/* 預約服務標題動畫 */
+.booking h2 {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.booking.show h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease,
+                transform 1s ease;
+}
+.booking .booking-intro,
+.booking .booking-form {
+    opacity: 0;
+    transform: translateY(60px);
+}
+.booking.show .booking-intro,
+.booking.show .booking-form {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease 0.4s,
+                transform 1s ease 0.4s;
+}
+/* 客戶見證標題動畫 */
+.testimonial h2 {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.testimonial.show h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease,
+                transform 1s ease;
+}
+/* 客戶見證卡片動畫 */
+.testimonial .review-box {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.testimonial.show .review-box {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease,
+                transform 0.8s ease;
+}
+testimonial .review-box:nth-of-type(1) {
+    transition-delay: 0.2s;
+}
+
+.testimonial .review-box:nth-of-type(2) {
+    transition-delay: 0.5s;
+}
+@media (max-width: 768px) {
+    .reveal {
+        opacity: 0;
+        transform: translateY(60px);
+        transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .reveal.show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .services.show .card,
+    .about.show h2,
+    .about.show p,
+    .booking.show h2,
+    .booking.show .booking-intro,
+    .booking.show .booking-form,
+    .testimonial.show h2,
+    .testimonial.show .review-box {
+        opacity: 1;
+    }
+}
+/* 首頁開始探索按鈕－按壓效果 */
+.btn:active {
+    transform: translateY(0) scale(0.96);
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.35);
+}
+/* 命理文章卡片進場動畫 */
+.articles .article-card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease,
+                transform 0.8s ease;
+}
+
+.articles.show .article-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.articles .article-card:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.articles .article-card:nth-child(2) {
+    transition-delay: 0.3s;
+}
+
+.articles .article-card:nth-child(3) {
+    transition-delay: 0.5s;
+}
+
+/* 最新命理文章標題進場動畫 */
+.articles h2 {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.articles.show h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease,
+                transform 1s ease;
+}
+
+/* 閱讀更多展開內容 */
+.article-more {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease,
+                opacity 0.5s ease;
+}
+
+.article-more.show {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.success-message {
+    display: none;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    background: rgba(255, 215, 0, 0.1);
+border: 1px solid #ffd700;
+}
+.success-message.show {
+    display: block;
+}
+.back-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 50%;
+    background: #ffd700;
+    color: #111;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+visibility: hidden;
+transform: translateY(10px);
+transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    z-index: 3000;
+}
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+body.menu-open .back-to-top {
+    opacity: 0;
+    visibility: hidden;
+}
+.back-to-top:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+}
+
+/* ===== 文章內頁 ===== */
+.article-content {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 30px;
+}
+
+.article-content h2 {
+    margin-top: 45px;
+    margin-bottom: 18px;
+}
+.article-meta {
+    margin-top: 18px;
+    margin-bottom: 35px;
+    font-size: 15px;
+    color: #c9ad63;
+    letter-spacing: 1px;
+}
+.reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: #ffd700;
+    z-index: 9999;
+}
+.articles {
+    scroll-margin-top: 100px;
+}
+
+.music-btn {
+    position: fixed;
+    right: 25px;
+    bottom: 85px;
+
+    width: 48px;
+    height: 48px;
+
+    border: 1px solid #ffd700;
+    border-radius: 50%;
+
+    background: rgba(17, 17, 17, 0.9);
+    color: #ffd700;
+
+    font-size: 20px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+
+    z-index: 3000;
+}
+
+.music-btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+}
+
+.music-btn.playing {
+    animation: musicGlow 2s ease-in-out infinite;
+}
+
+@keyframes musicGlow {
+    0%, 100% {
+        box-shadow: 0 0 8px rgba(255, 215, 0, 0.35);
+    }
+
+    50% {
+        box-shadow: 0 0 22px rgba(255, 215, 0, 0.85);
+    }
+}

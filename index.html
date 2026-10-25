@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玄星閣</title>
+    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> 
+</head><body>
+
+    <nav>
+
+    <h2>玄星閣</h2>
+
+    <button class="menu-btn" aria-label="開啟選單">
+    <i class="fa-solid fa-bars"></i>
+</button>
+
+    <div class="nav-links">
+        <a href="#hero">首頁</a>
+        <a href="#articles">命理文章</a>
+        <a href="#about">關於玄星閣</a>
+        <a href="#booking">預約服務</a>
+        <a href="#testimonial">客戶見證</a>
+    </div>
+</nav>
+<div class="menu-overlay"></div>
+
+
+<section class="hero" id="hero">
+
+    <h1>玄星閣</h1>
+
+    <p class="subtitle">
+        探索命理・理解人生
+    </p>
+
+    <p class="slogan">
+        以命理為鏡，探索人生方向。
+    </p>
+
+   <a href="#services" class="btn">
+        開始探索
+    </a><p class="quote">
+    「每一次探索，都是認識自己的開始。」
+</p>
+
+</section>
+<section class="services reveal" id="services">
+
+    <h2>命理服務</h2>
+
+    <div class="service-box">
+        <div class="card">
+            <h3>🔮 紫微斗數</h3>
+            <p>分析人生格局、事業、財運、婚姻。</p>
+        </div>
+
+        <div class="card">
+            <h3>✍️姓名學</h3>
+            <p>了解姓名能量，改善人生運勢。</p>
+        </div>
+
+        <div class="card">
+            <h3>📅流年運勢</h3>
+            <p>掌握每年的機會與挑戰。</p>
+        </div><div class="card">
+    <h3>🃏雷諾曼</h3>
+    <p>透過雷諾曼牌，解析感情、事業與人生方向。</p>
+</div>
+
+<div class="card">
+    <h3>⭐塔羅牌</h3>
+    <p>藉由塔羅牌探索內心，提供人生建議與指引。</p>
+</div>
+
+    </div>
+</section>
+
+<section class="articles  reveal" id="articles">
+    <h2>最新命理文章</h2>
+
+    <div class="article-container">
+
+        <div class="article-card">
+            <span class="article-tag">紫微斗數</span>
+            <h3>紫微斗數真的能改變人生嗎？</h3>
+            <p>從命盤了解自己的優勢與挑戰，找到適合自己的方向。</p>
+            <div class="article-more">
+        <p>
+            紫微斗數可以幫助我們更了解自己的性格、優勢與人生課題，
+            但真正改變人生的關鍵，仍然在於我們如何做選擇與採取行動。
+        </p>
+    </div>
+
+    <a href="ziwei.html" class="article-link">閱讀完整文章 →</a>
+</div>
+
+        <div class="article-card">
+            <span class="article-tag">姓名學</span>
+            <h3>姓名學的重要性</h3>
+            <p>名字不只是稱呼，也蘊含著能量與象徵意義。</p>
+            <div class="article-more">
+    <p>
+        姓名不只是稱呼，也包含文字、聲音與文化上的象徵。
+        透過姓名學，可以從不同角度認識自己的特質與人生方向。
+    </p>
+</div>
+            <a href="xingming.html" class="article-link">閱讀完整文章 →</a>
+        </div>
+
+        <div class="article-card">
+            <span class="article-tag">流年運勢</span>
+            <h3>2026 流年運勢解析</h3>
+            <p>提前了解流年的變化，做好人生規劃與準備。</p>
+            <div class="article-more">
+    <p>
+        流年運勢可以幫助我們觀察不同階段可能面臨的機會與挑戰，
+        提前做好規劃，並在適合的時機採取行動。
+    </p>
+</div>
+           <a href="liunian.html" class="article-link">閱讀完整文章 →</a>
+        </div>
+
+    </div>
+
+</section>
+<section class="about  reveal" id="about">
+    <h2>關於玄星閣</h2>
+
+    <p>
+        玄星閣致力於紫微斗數、姓名學與命理研究，
+        希望透過專業分析，
+        幫助每位朋友找到人生方向，
+        提升幸福與智慧。
+    </p>
+</section>
+<section class="booking  reveal" id="booking">
+    <h2>預約命理服務</h2>
+    <p class="booking-intro">
+        歡迎留下基本資料與想諮詢的內容，我們將再與您聯繫。
+    </p>
+
+    <form class="booking-form"
+      action="https://formsubmit.co/0c168d9682b644d8a8d02d55ae01be97"
+      method="POST">
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html?success=1">
+        <div class="form-group">
+            <label for="name">姓名</label>
+            <input type="text" id="name" name="name" placeholder="請輸入姓名" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">電子信箱</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="service">預約項目</label>
+            <select id="service" name="service" required>
+                <option value="">請選擇服務</option>
+                <option value="紫微斗數">紫微斗數</option>
+                <option value="姓名學">姓名學</option>
+                <option value="流年運勢">流年運勢</option>
+                <option value="雷諾曼">雷諾曼</option>
+                <option value="塔羅牌">塔羅牌</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">想詢問的內容</label>
+            <textarea id="message" name="message" rows="6"
+                placeholder="請簡單說明想了解的問題"></textarea>
+        </div>
+
+        <button type="submit" class="booking-btn">送出預約</button>
+    </form>
+
+<div class="success-message" id="successMessage">
+    <h3>✓ 預約成功</h3>
+    <p>感謝您的預約，我們將盡快與您聯繫。</p>
+</div>
+
+</section>
+<section class="testimonial  reveal" id="testimonial">
+    <h2>客戶見證</h2>
+
+    <div class="review-box">
+        <p>
+            「老師分析非常仔細，
+            幫助我重新找到人生方向。」
+        </p>
+
+        <h4>—— 林小姐</h4>
+    </div>
+
+    <div class="review-box">
+        <p>
+            「紫微斗數解析很準，
+            對工作與感情都有幫助。」
+        </p>
+
+        <h4>—— 王先生</h4>
+    </div>
+</section>
+<footer class="footer">
+    <h2>玄星閣</h2>
+
+    <p>探索命理・理解人生</p>
+
+    <div class="footer-links">
+        <a href="#hero">首頁</a>
+<a href="#articles">命理文章</a>
+<a href="#booking">預約服務</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 玄星閣 All Rights Reserved.
+    </p>
+</footer>
+<audio id="bgMusic" loop>
+    <source src="audio/mixkit-silent-descent-614.mp3" type="audio/mpeg">
+</audio>
+<button class="music-btn" id="musicBtn" aria-label="播放背景音樂">🎵</button>
+<button class="back-to-top" aria-label="回到頁面頂部">↑</button>
+<script src="js/script.js"></script>
+
+</body>
+</html>
+
